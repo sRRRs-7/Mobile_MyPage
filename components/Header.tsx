@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   return (
     <>
-      <div className='flex bg-white h-20 items-center justify-center space-x-10'>
+      <div className='flex bg-white h-20 items-center justify-center space-x-10 shadow-xl'>
         {/* <a href='/blogs' className='text-base font-medium text-gray-500 hover:text-gray-900'>
               Blog
             </a>

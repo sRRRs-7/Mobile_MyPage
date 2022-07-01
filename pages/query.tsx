@@ -18,7 +18,7 @@ const query = (props: Props) => {
   return (
     <div className='bg-orange-300 h-screen'>
       <Header />
-      <div className='mt-32 bg-orange-300 h-full'>
+      <div className='bg-orange-300 h-full'>
         <div className='flex justify-center'>
           <div className='flex flex-col md:flex-row md:max-w-3xl rounded-lg bg-white shadow-2xl'>
             <img

@@ -58,7 +58,7 @@ const init = async (canvas: any) => {
     map: textureLoader.load(sunTexture),
   });
   const sun = new THREE.Mesh(sunGeo, sunMat);
-  sun.position.set(50, -10, 0);
+  sun.position.set(20, -10, 0);
   scene.add(sun);
 
   const loader = new FontLoader();
@@ -77,14 +77,13 @@ const init = async (canvas: any) => {
     textGeo.center();
     textGeo.computeBoundingBox();
     textGeo.rotateY(Math.PI / 10);
-
     const textMat = new THREE.MeshPhongMaterial({
       color: 0x00ff00,
       specular: 0xffffff,
       shininess: 50,
     });
     const mesh = new THREE.Mesh(textGeo, textMat);
-    mesh.position.set(-70, -160, 0);
+    mesh.position.set(0, -160, 0);
     scene.add(mesh);
   });
 
@@ -104,14 +103,13 @@ const init = async (canvas: any) => {
     textGeo2.center();
     textGeo2.computeBoundingBox();
     textGeo2.rotateY(-Math.PI / 10);
-
     const textMat2 = new THREE.MeshPhongMaterial({
       color: 0x00ffff,
       specular: 0xffffff,
       shininess: 50,
     });
     const mesh2 = new THREE.Mesh(textGeo2, textMat2);
-    mesh2.position.set(70, -300, 0);
+    mesh2.position.set(0, -300, 0);
     scene.add(mesh2);
   });
 
@@ -122,7 +120,7 @@ const init = async (canvas: any) => {
     function (gltf) {
       const model = gltf.scene;
       model.scale.set(80, 60, 50);
-      model.position.set(-100, -600, -60);
+      model.position.set(-30, -600, -60);
       model.rotation.set(0, 3, 0);
       model.castShadow = true;
       scene.add(model);
@@ -180,25 +178,25 @@ const Scroll: NextPage = () => {
       <div>
         <canvas className='fixed top-0 left-0 z-0' id='canvas'></canvas>
 
-        <section className='flex relative justify-start items-center mx-64 px-32 py-64 my-32 z-10'>
+        <section className='flex relative justify-start items-center py-64 my-32 z-10'>
           <h1 className='text-white text-6xl font-serif tracking-wide justify-content hover:text-red-500'>
             <a href='/three'>3D Graphic</a>
           </h1>
         </section>
 
-        <section className='flex relative justify-end items-center mx-64 px-56 py-64 my-32 z-10'>
+        <section className='flex relative justify-end items-center py-64 my-32 z-10'>
           <h1 className='text-white text-6xl font-serif tracking-wide justify-content hover:text-green-500'>
             <a href='/node'>Node.js</a>
           </h1>
         </section>
 
-        <section className='flex relative justify-start items-center mx-64 px-32 py-64 my-32 z-10'>
+        <section className='flex relative justify-start items-center py-64 my-32 z-10'>
           <h1 className='text-white text-6xl font-serif tracking-wide justify-content hover:text-blue-300'>
             <a href='/golang'>Go Language</a>
           </h1>
         </section>
 
-        <section className='flex relative justify-end items-center mx-64 px-56 py-64 my-32 z-10'>
+        <section className='flex relative justify-end items-center py-64 my-32 z-10'>
           <a href='/database'>
             <h1 className='text-white text-6xl font-serif tracking-wide justify-content hover:text-yellow-500'>
               Database

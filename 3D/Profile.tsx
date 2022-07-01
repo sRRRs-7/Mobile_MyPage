@@ -36,7 +36,7 @@ const init = async (canvas: any) => {
   ]);
 
   const camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 0.1, 2500);
-  camera.position.set(0, 0, 200);
+  camera.position.set(0, 0, 400);
   scene.add(camera);
 
   // light
